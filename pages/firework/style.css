@@ -29,29 +29,3 @@ body,html{
     text-align: center;  
   } */
 
-  .button {
-    background: #d43543;
-    border-radius: 100px;
-    padding: 20px 60px;
-    color: rgb(236, 233, 37);
-    text-decoration: none;
-    font-size: 1.45em;
-    margin: 0 15px;
-    transition: 0.3s;
-    font-weight: 500;
-    border-style: solid;
-    border-width: thick;
-    border-color: yellow;
-  }
-  
-  .button:hover{
-      color: rgb(248, 234, 39);
-      transform: scale(1.2);
-      box-shadow: whitesmoke;
-      text-decoration: underline;
-  }
-
-  .mt-6{
-      margin-top: 35%;
-  }
-  
