@@ -35,7 +35,7 @@ function loading(){
 
 function getRandom() {
     var numberGen = document.getElementById("number")
-    numberGen.innerHTML = `<span>Chúc mừng bạn nhận được lì xì mệnh giá</span> ( ` + array[Math.floor((Math.random() * 33))]  + ` đồng ) !!!`;
+    numberGen.innerHTML = `<span>Chúc mừng bạn nhận được lì xì mệnh giá</span> ( ` + array[Math.floor((Math.random() * 63))]  + ` đồng ) !!!`;
   } 
 
 function getName(){
