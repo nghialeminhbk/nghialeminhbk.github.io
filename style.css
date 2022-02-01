@@ -2,9 +2,29 @@ body,html{
     width: 100%;
     height: 100vh;
     margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image:
+        url('../image/thiep-tet-2022614c2aacade92.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
 }
 #canvas{
     height: 100%;
     width: 100%;
-    background-color: black;
+    z-index: -1;
+    margin: 0;
 }
+
+/* body:after {  
+    content: url('https://t4.ftcdn.net/jpg/02/82/85/41/360_F_282854103_37oUj0bXJxBW6MOb5GnxuBmv4Vq83PKw.jpg');
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 38.25%);
+    text-align: center;  
+  } */
