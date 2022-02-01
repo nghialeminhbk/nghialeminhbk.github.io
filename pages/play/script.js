@@ -6,11 +6,11 @@ for(var i=1; i<=10; i++){
     array.push("10.000");
 }
 
-for(var i=1; i<=30; i++){
+for(var i=1; i<=25; i++){
     array.push("20.000");
 }
 
-for(var i=1; i<=20; i++){
+for(var i=1; i<=25; i++){
     array.push("50.000");
 }
 
