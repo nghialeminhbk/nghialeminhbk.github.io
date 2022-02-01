@@ -14,47 +14,61 @@
 <body>
     <div class="build d-flex flex-column justify-content-center align-items-center">
         <h2 class="mt-5 mb-5">Chào mừng ... đến với bốc thăm lì xì may mắn</h2>
-        <div class="introduce row d-flex justify-content-center mb-5 mt-3">
-            <div class="card col-3 me-3" style="width: 18rem;">
-                <img src="/image/lixi1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">10.000đ (Số 1)</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="introduce row ">
+            <div class="col p-3 d-flex justify-content-center ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/image/lixi1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">10.000đ (Số 1)</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card col-3 me-3" style="width: 18rem;">
-                <img src="/image/lixi2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">20.000đ (Số 2)</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col p-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/image/lixi2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">20.000đ (Số 2)</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card col-3 me-3" style="width: 18rem;">
-                <img src="/image/lixi3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">50.000đ (Số 3)</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col p-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/image/lixi3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">50.000đ (Số 3)</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card col-3 me-3" style="width: 18rem;">
-                <img src="/image/lixi4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">100.000đ (Số 4)</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col p-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/image/lixi4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">100.000đ (Số 4)</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
-            </div>
+            </div>     
         </div>
         <h3>Bấm nút này để bốc lì xì</h3>
-        <!-- <div class="loading">
-            <div class="ring"></div>
-            <div class="ring"></div>
-            <div class="ring"></div>
-            <p>Loading...</p>
-        </div> -->
-        <i class="far fa-arrow-alt-circle-down fs-1 mb-3"></i>
-        <button onclick="getRandom()" id="btn1" class="mb-5" >Bốc thăm lì xì</button>
-        <h3 id="number" class="mb-5">Kết quả bốc sẽ hiện thị ở đây !</h3>
-        <iframe class="nhac-youtube mb-5" width="1000" height="609" src="https://www.youtube.com/embed/umoJ_F3R2aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="far fa-arrow-alt-circle-down fs-1 mb-4"></i>
+        <button onclick="loading()" id="btn1" class="mb-5" >Bốc thăm lì xì</button>
+        <h3 id="number" class="mb-6">
+            <span id="text-noti">Kết quả bốc thăm sẽ được hiển thị ở đây !!!</span>
+            <div id="loading" hidden class="loading">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <p>Loading...</p>
+            </div>
+        </h3>
+        <audio id="audio" hidden controls>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="../../audio/Super Idol x Ngày Xuân Long Phụng Sum Vầy.mp3" type="audio/mpeg">
+        </audio>
+        <iframe class="nhac-youtube mb-5" width="798" height="449" src="https://www.youtube.com/embed/umoJ_F3R2aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <script src="script.js"></script>
 </body>

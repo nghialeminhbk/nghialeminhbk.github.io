@@ -4,11 +4,10 @@ body,html{
     margin: 0;
     min-width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
     background-image:
         url('../../image/anh-chuc-mung-nam-moi-2021-dep-nhat.jpg');
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: repeat; 
     background-size: cover;
 }
 

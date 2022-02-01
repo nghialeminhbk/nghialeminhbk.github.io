@@ -47,10 +47,14 @@ button {
     background-color: rgb(255, 102, 0);
 }
 
+.mb-6{
+    margin-bottom: 4em;
+}
+
 .loading
 {
     position: relative;
-    top: 500px;
+    top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -59,8 +63,8 @@ button {
 .loading .ring
 {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin: -30px;
     border-radius: 50%;
     border: 4px solid transparent;
@@ -159,7 +163,7 @@ button {
 {
     position: absolute;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 0.8em;
     font-family: consolas;
     bottom: -80px;
     letter-spacing: 0.15em;
