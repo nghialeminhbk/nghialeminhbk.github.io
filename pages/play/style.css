@@ -48,13 +48,13 @@ button {
 }
 
 .mb-6{
-    margin-bottom: 4em;
+    margin-bottom: 125px;
 }
 
 .loading
 {
     position: relative;
-    top: 50px;
+    top: 60px;
     width: 100%;
     display: flex;
     justify-content: center;

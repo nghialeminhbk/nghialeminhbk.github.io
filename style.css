@@ -6,9 +6,9 @@ body,html{
     min-height: 100vh;
     overflow: hidden;
     background-image:
-        url('../image/thiep-tet-2022614c2aacade92.jpg');
+        url('./image/banner-tet-2022614be97dc1203.jpg');
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: repeat; 
     background-size: cover;
     margin: 0;
 }
@@ -32,7 +32,7 @@ body,html{
   .button {
     background: #d43543;
     border-radius: 100px;
-    padding: 20px 60px;
+    padding: 10px 30px;
     color: rgb(236, 233, 37);
     text-decoration: none;
     font-size: 1.45em;
@@ -46,7 +46,7 @@ body,html{
   
   .button:hover{
       color: rgb(248, 234, 39);
-      transform: scale(1.2);
+      transform: scale(1.1);
       box-shadow: whitesmoke;
       text-decoration: underline;
   }

@@ -15,11 +15,14 @@
         <div class="form p-3 mt-3">
             <div class="form-group">
                 <label class="form-lable mb-3 fs-4">Nhập tên của bạn vào đây</label>
-                <input type="text" class="form-control fs-4" placeholder="Điền tên zô đây ...">
+                <input type="text" class="form-control fs-4" placeholder="Điền tên zô đây ..." required>
             </div>
         </div>
-        <a href="../play/play.html" class="btn-zo mt-3">Dô nhận lì xì !</a>
-        <iframe class="nhac-youtube mt-3" width="798" height="449" src="https://www.youtube.com/embed/4tFQnX-fW_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="../play/play.html" onclick="setName()" class="btn-zo mt-3">Dô nhận lì xì !</a>
+        <div class="ratio ratio-16x9">
+            <iframe class="nhac-youtube mt-3" width="798" height="449" src="https://www.youtube.com/embed/4tFQnX-fW_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
