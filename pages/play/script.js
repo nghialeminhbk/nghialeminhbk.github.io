@@ -30,7 +30,7 @@ function loading(){
         getRandom();
         audio.pause();
         button.setAttribute("disabled","");
-    }, 18000);
+    }, 20000);
 }
 
 function getRandom() {
