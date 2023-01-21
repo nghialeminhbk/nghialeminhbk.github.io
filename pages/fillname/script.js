@@ -1,7 +1,11 @@
 function setName(){
     const user = document.getElementsByTagName("input")[0].value;
-    // setCookie("username",user, 365);
+    if(user == ""){
+        alert("Điền tên zô đã rồi chơi !");
+        return;
+    }
     window.localStorage.setItem("name",user);
+    window.location.replace("/pages/play/play.html");
 }
 
 // function setCookie(cname, cvalue, exdays) {

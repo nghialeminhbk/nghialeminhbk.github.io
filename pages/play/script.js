@@ -2,43 +2,62 @@ console.log(document.cookie)
 
 const array = [];
 
-for(var i=1; i<=10; i++){
-    array.push("10.000");
+// dien vao ti le 10, 20, 50, 100
+function init(x10, x20, x50, x100) {
+    for (var i = 1; i <= x10; i++) {
+        array.push("10.000");
+    }
+
+    for (var i = 1; i <= x20; i++) {
+        array.push("20.000");
+    }
+
+    for (var i = 1; i <= x50; i++) {
+        array.push("50.000");
+    }
+
+    for (var i = 1; i <= x100; i++) {
+        array.push("100.000");
+    }
 }
 
-for(var i=1; i<=25; i++){
-    array.push("20.000");
+function destroy() {
+    for (var i = 1; i <= 100; i++) {
+        array.pop();
+    }
 }
 
-for(var i=1; i<=25; i++){
-    array.push("50.000");
-}
-
-for(var i=1; i<=3; i++){
-    array.push("100.000");
-}
-
-function loading(){
+function loading() {
     var textNoti = document.getElementById("text-noti")
     var loading = document.getElementById("loading")
-    var audio =  document.getElementById("audio")
+    var audio = document.getElementById("audio")
     var button = document.getElementById("btn1")
     audio.play();
     textNoti.setAttribute("hidden", "");
     loading.removeAttribute("hidden");
-    setTimeout(()=>{
+    setTimeout(() => {
         getRandom();
         audio.pause();
-        button.setAttribute("disabled","");
-    }, 20000);
+        button.setAttribute("disabled", "");
+    }, 10000);
 }
 
 function getRandom() {
     var numberGen = document.getElementById("number")
-    numberGen.innerHTML = `<span>Chúc mừng bạn nhận được lì xì mệnh giá</span> ( ` + array[Math.floor((Math.random() * 63))]  + ` đồng ) !!!`;
-  } 
+    // hard code
+    init(15, 40, 40, 5);
+    let money = array[Math.floor((Math.random() * 100))]
+    numberGen.innerHTML = `<span>Chúc mừng bạn nhận được lì xì mệnh giá</span> ( ` + money + ` đồng ) !!!`;
+    console.log(money);
+    destroy();
+}
 
-function getName(){
-    var username = document.getElementById("username");
-    username.innerHTML = "\"" + window.localStorage.getItem("name") + "\"";
+function getName() {
+    let usernameE = document.getElementById("username");
+    let username = window.localStorage.getItem("name");
+    if (username == null || username == "") {
+        window.location.replace("/pages/fillname/fillname.html");
+        return;
+    }
+    usernameE.innerHTML = "\"" + window.localStorage.getItem("name") + "\"";
 }
