@@ -45,7 +45,7 @@ function loading() {
 function getRandom() {
     var numberGen = document.getElementById("number")
     // hard code
-    init(50, 40, 5, 5);
+    init(90, 10, 0, 0);
     let money = array[Math.floor((Math.random() * 100))]
     numberGen.innerHTML = `<span>Chúc mừng bạn nhận được lì xì mệnh giá</span> ( ` + money + ` đồng ) !!!`;
     console.log(money);
