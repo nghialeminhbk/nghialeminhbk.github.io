@@ -72,20 +72,21 @@ body {
     transform-style: preserve-3d;
     transform-origin: 0% 50%;
     transform: perspective(800px) rotateY(0deg);
-    transition: all 0.8s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .card:hover .front {
     transform: perspective(800px) rotateY(-170deg);
     background-color: #41718d;
-    transition: 2s;
+    transition: 3s;
 }
 
 .card:hover .back {
     transform: perspective(800px) rotateY(-170deg);
-    transition: 2s;
+    transition: 3s;
     box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    background-image: url("../../image/anh_trang.png");
+    /* background-image: url("../../image/anh_trang.png"); */
+    background-image: url("https://hoasaigon.com.vn/upload/images/nhung-cach-cam-hoa-cho-ngay-20-10-them-y-nghia.jpg");
     /* background-image: linear-gradient(to right top, #1f0537, #cc7ed2, #78489f, #9e47a0, #eb1270); */
     background-position: center;
     /* Center the image */
@@ -105,9 +106,10 @@ body {
     transform-style: preserve-3d;
     transform-origin: 0% 50%;
     transform: perspective(800px) rotateY(0deg);
-    transition: all 0.8s ease-in-out;
+    transition: all 1s ease-in-out;
     /* background-color: #e6f0e6; */
-    background-image: url("../../image/anh_trang.png");
+    /* background-image: url("../../image/anh_trang.png"); */
+    background-image: url("https://hoasaigon.com.vn/upload/images/nhung-cach-cam-hoa-cho-ngay-20-10-them-y-nghia.jpg");
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
