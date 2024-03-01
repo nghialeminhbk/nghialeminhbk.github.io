@@ -11,7 +11,7 @@ let currWeek = Math.ceil(passDayOfYear / 7);
 let totalWeek = Math.ceil(daysInYear() / 7);
  
 let o = {
-    _pass: Math.round(passDayOfYear / daysInYear(c.getFullYear()) * 100) + "%",
+    _pass: Math.round(passDayOfYear / daysInYear(c.getFullYear()) * 100),
     _rest: Number(daysInYear() - passDayOfYear),
     _today: dateFormat(c),
     _cW: currWeek,
@@ -24,3 +24,9 @@ console.log("So ngay con lai: " + o._rest);
 console.log("Hnay la: " + o._today);
 console.log("Tuan hien tai: " + o._cW + "/" + o._tW);
 console.log("=====================");
+
+document.getElementById("today").innerText = o._today;
+document.getElementById("week").innerText = o._cW + "/" + o._tW;
+document.getElementById("rest").innerText = o._rest + " days";
+document.getElementById("progress-description").innerText = o._pass + "%";
+document.querySelector("progress").setAttribute("value", o._pass);
